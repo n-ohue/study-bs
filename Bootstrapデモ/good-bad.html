@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Sample</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sticky-footer.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi">
+            <span class="sr-only">メニュー</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="javascript:void(0);">Bootstrap 勉強会</a>
+        </div>
+       
+        <div id="gnavi" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">表紙</a></li>
+            <li><a href="list.html">目次</a></li>
+            <li><a href="about.html">Bootstrapとは</a></li>
+            <li class="active"><a href="javascript:void(0);">メリット・デメリット</a></li>
+            <li><a href="example01.html">具体例①</a></li>
+            <li><a href="example02.html">具体例②</a></li>
+            <li><a href="example03.html">具体例③</a></li>
+            <li><a href="finish.html">最後に</a></li>
+            <li><a href="question.html">質疑応答</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>メリット・デメリット</h2>
+        <p>カレールーを使うのとスパイスを調合するのでは何が違う？</p>
+      </div>
+
+      <div class="block clearfix">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><h3>メリット</h3></a>
+        <div class="panel panel-default">
+          <div id="collapse1" class="panel-collapse collapse">
+            <div class="text-center">
+              <div class="block">
+                <div class="panel panel-default" style="margin:20px 10px;">
+                  <div class="panel-heading"><h4>スピーディーにできる => 既に枠組みができているので、classを付与するだけで構成ができる</h4></div>
+                  <div class="panel-body"><h4>知識が疎くても美味しくできる => ルールに則って作成すればレイアウト、デザイン共に整えられる</h4></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block clearfix">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><h3>デメリット</h3></a>
+        <div class="panel panel-default">
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="text-center">
+              <div class="block">
+                <div class="panel panel-default" style="margin:20px 10px;">
+                  <div class="panel-heading"><h4>同じ味になってしまう => テイストが似通ってしまう</h4></div>
+                  <div class="panel-body"><h4>ルーを使用して表現できる味は限られる => やりたいこと全てができるわけではない</h4></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block clearfix">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><h3>デメリットを解消するには？</h3></a>
+        <div class="panel panel-default">
+          <div id="collapse3" class="panel-collapse collapse">
+            <div class="text-center">
+              <div class="block">
+                <div class="panel panel-default" style="margin:20px 10px;">
+                  <div class="panel-heading"><h4>追加のスパイスを投入することでデメリットをなくすことはできる</h4></div>
+                  <div class="panel-body"><h2>=> <a href="http://katoshun.com/blog/rwd-20131222.html" target="_blank">アイディア次第でより使いやすいものになる！</a></h2></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="text-muted">
+          <a href="about.html"><button type="button" class="btn btn-primary btn-lg pull-left">prev</button></a>
+          <a href="example01.html"><button type="button" class="btn btn-primary btn-lg pull-right">next</button></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

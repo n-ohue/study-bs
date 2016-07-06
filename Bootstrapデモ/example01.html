@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Sample</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sticky-footer.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi">
+            <span class="sr-only">メニュー</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="javascript:void(0);">Bootstrap 勉強会</a>
+        </div>
+       
+        <div id="gnavi" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">表紙</a></li>
+            <li><a href="list.html">目次</a></li>
+            <li><a href="about.html">Bootstrapとは</a></li>
+            <li><a href="good-bad.html">メリット・デメリット</a></li>
+            <li class="active"><a href="javascript:void(0);">具体例①</a></li>
+            <li><a href="example02.html">具体例②</a></li>
+            <li><a href="example03.html">具体例③</a></li>
+            <li><a href="finish.html">最後に</a></li>
+            <li><a href="question.html">質疑応答</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>具体例①</h2>
+        <p>Bootstrapのclassを使うだけで表示が整う</p>
+      </div>
+
+      <div class="block">
+        <h3>テーブル</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+            <td>2</td>
+            <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="block">
+        <h3>コード</h3>
+        <pre style="height: 150px;">
+&lt;div  class="container"&gt;
+  &lt;table class="table"&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;First Name&lt;/th&gt;
+        &lt;th&gt;Last Name&lt;/th&gt;
+        &lt;th&gt;Username&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt;Mark&lt;/td&gt;
+        &lt;td&gt;Otto&lt;/td&gt;
+        &lt;td&gt;@mdo&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Jacob&lt;/td&gt;
+        &lt;td&gt;Thornton&lt;/td&gt;
+        &lt;td&gt;@fat&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;Larry&lt;/td&gt;
+        &lt;td&gt;the Bird&lt;/td&gt;
+        &lt;td&gt;@twitter&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+        </pre>
+      </div>
+
+      <div class="block">
+        <h4>ちなみに<code>table-hover</code>というclassを付与すると…</h4>
+        <table class="table table-hover" style="margin: 20px 0">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+            <td>2</td>
+            <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="text-muted">
+          <a href="good-bad.html"><button type="button" class="btn btn-primary btn-lg pull-left">prev</button></a>
+          <a href="example02.html"><button type="button" class="btn btn-primary btn-lg pull-right">next</button></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

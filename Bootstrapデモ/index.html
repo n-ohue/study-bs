@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Sample</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sticky-footer.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi">
+            <span class="sr-only">メニュー</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="javascript:void(0);">Bootstrap 勉強会</a>
+        </div>
+       
+        <div id="gnavi" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="javascript:void(0);">表紙</a></li>
+            <li><a href="list.html">目次</a></li>
+            <li><a href="about.html">Bootstrapとは</a></li>
+            <li><a href="good-bad.html">メリット・デメリット</a></li>
+            <li><a href="example01.html">具体例①</a></li>
+            <li><a href="example02.html">具体例②</a></li>
+            <li><a href="example03.html">具体例③</a></li>
+            <li><a href="finish.html">最後に</a></li>
+            <li><a href="question.html">質疑応答</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container text-center">
+      <h1>Bootstrap 勉強会</h1>
+      <div class="block" style="width:80%; margin:0 auto;">
+        <img src="images/top.png" class="img-responsive">
+      </div>
+      <div>
+        <p>2016.07.05　大上尚子</p>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="text-muted">
+          <button type="button" class="btn btn-primary btn-lg pull-left" disabled="disabled">prev</button>
+          <a href="list.html"><button type="button" class="btn btn-primary btn-lg pull-right">next</button></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

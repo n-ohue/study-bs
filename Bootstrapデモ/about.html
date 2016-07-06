@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Sample</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sticky-footer.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi">
+            <span class="sr-only">メニュー</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="javascript:void(0);">Bootstrap 勉強会</a>
+        </div>
+        <div id="gnavi" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">表紙</a></li>
+            <li><a href="list.html">目次</a></li>
+            <li class="active"><a href="javascript:void(0);">Bootstrapとは</a></li>
+            <li><a href="good-bad.html">メリット・デメリット</a></li>
+            <li><a href="example01.html">具体例①</a></li>
+            <li><a href="example02.html">具体例②</a></li>
+            <li><a href="example03.html">具体例③</a></li>
+            <li><a href="finish.html">最後に</a></li>
+            <li><a href="question.html">質疑応答</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+    <div class="container">
+
+      <div class="jumbotron">
+        <h2>Bootstrapとは</h2>
+        <p>CSSフレームワークの一種</p>
+      </div>
+      
+      <div class="block">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><h3>そもそもフレームワークって？</h3></a>
+        <div class="panel panel-default">
+          <div id="collapse1" class="panel-collapse collapse">
+            <div class="panel-body">
+              <i>『プログラミングにおいて、一般的な機能をもつ共通コードをユーザーが選択的に上書きしたり特化させたりすることで、<br>ある特定の機能をもたせようとする抽象概念のことである。（Wikipediaより）』</i>
+            </div>
+            <div class="text-center">
+              <h4>=> 辞書的な意味ではいまいちわからない</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block clearfix">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><h3>例えるなら…</h3></a>
+        <div class="panel panel-default">
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body text-center">
+              <h2>カレーのルー</h2>
+            </div>
+            <div class="text-center">
+              <div class="block">
+                <img src="images/item01.jpg" class="img-responsive" style="margin:0 auto 20px;">
+                <div class="panel panel-default">
+                  <div class="panel-heading"><h4>スパイスを使用してやらなければいけないことが、ルーを使えば簡単にできる</h4></div>
+                  <div class="panel-body"><h4>それぞれのルーに特徴がある　=> やりたい事に合わせてフレームワークが選べる</h4></div>
+                  <div class="panel-footer"><h4>あまり知識がなくても美味しいものを作ることができる</h4></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block clearfix">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><h3>CSSフレームワークの例</h3></a>
+        <div class="panel panel-default">
+          <div id="collapse3" class="panel-collapse collapse">
+            <div class="text-center">
+              <div class="block">
+                <div class="panel panel-default" style="margin:20px 10px;">
+                  <div class="panel-heading"><h4><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></h4></div>
+                  <div class="panel-body"><h4><a href="http://foundation.zurb.com/" target="_blank">Foundation</a></h4></div>
+                  <div class="panel-footer"><h4><a href="http://purecss.io/" target="_blank">Pure</a></h4></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="text-muted">
+          <a href="list.html"><button type="button" class="btn btn-primary btn-lg pull-left">prev</button></a>
+          <a href="good-bad.html"><button type="button" class="btn btn-primary btn-lg pull-right">next</button></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

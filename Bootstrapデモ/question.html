@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Sample</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sticky-footer.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+    <script tyoe="text/javascript">
+      $('#myTab a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
+
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi">
+            <span class="sr-only">メニュー</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="javascript:void(0);">Bootstrap 勉強会</a>
+        </div>
+       
+        <div id="gnavi" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">表紙</a></li>
+            <li><a href="list.html">目次</a></li>
+            <li><a href="about.html">Bootstrapとは</a></li>
+            <li><a href="good-bad.html">メリット・デメリット</a></li>
+            <li><a href="example01.html">具体例①</a></li>
+            <li><a href="example02.html">具体例②</a></li>
+            <li><a href="example03.html">具体例③</a></li>
+            <li><a href="finish.html">最後に</a></li>
+            <li class="active"><a href="javascript:voic(0);">質疑応答</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <img src="images/item02.png" alt="モーダル商品イメージ１" data-toggle="modal" data-target="#image_myModal" class="img-responsive" style="margin:0 auto;">
+      <div class="modal fade" id="image_myModal">
+        <div class="modal-dialog">
+          <div class="modal-body">
+            <img src="images/item03.jpg" alt="モーダル商品イメージ１" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="text-muted">
+          <a href="finish.html"><button type="button" class="btn btn-primary btn-lg pull-left">prev</button></a>
+          <button type="button" class="btn btn-primary btn-lg pull-right" disabled="disabled">next</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

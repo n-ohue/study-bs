@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Sample</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sticky-footer.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi">
+            <span class="sr-only">メニュー</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="javascript:void(0);">Bootstrap 勉強会</a>
+        </div>
+       
+        <div id="gnavi" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">表紙</a></li>
+            <li><a href="list.html">目次</a></li>
+            <li><a href="about.html">Bootstrapとは</a></li>
+            <li><a href="good-bad.html">メリット・デメリット</a></li>
+            <li><a href="example01.html">具体例①</a></li>
+            <li class="active"><a href="javascript:void(0);">具体例②</a></li>
+            <li><a href="example03.html">具体例③</a></li>
+            <li><a href="finish.html">最後に</a></li>
+            <li><a href="question.html">質疑応答</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>具体例②</h2>
+        <p>Bootstrapのclassを使うだけでボタンデザインを作ることができる</p>
+      </div>
+
+      <div class="block">
+        <h3>色の変更</h3>
+        <!-- Default -->
+        <button type="button" class="btn btn-default">Default</button>
+        <!-- Primary -->
+        <button type="button" class="btn btn-primary">Primary</button>
+        <!-- Success -->
+        <button type="button" class="btn btn-success">Success</button>
+        <!-- Info -->
+        <button type="button" class="btn btn-info">Info</button>
+        <!-- Warning -->
+        <button type="button" class="btn btn-warning">Warning</button>
+        <!-- Danger -->
+        <button type="button" class="btn btn-danger">Danger</button>
+        <!-- Link -->
+        <button type="button" class="btn btn-link">Link</button>
+      </div>
+
+      <div class="block">
+        <h3>サイズの変更</h3>
+        <button type="button" class="btn btn-default btn-lg">btn-lg</button>
+        <button type="button" class="btn btn-primary">Default Size</button>
+        <button type="button" class="btn btn-success btn-sm">btn-sm</button>
+        <button type="button" class="btn btn-info btn-xs">btn-xs</button>
+      </div>
+
+      <div class="block">
+        <h3>ブロックタイプ</h3>
+        <!-- Default -->
+        <button type="button" class="btn btn-info btn-block">Default</button>
+        <!-- Primary -->
+        <button type="button" class="btn btn-warning btn-block">Primary</button>
+        <!-- Success -->
+        <button type="button" class="btn btn-danger btn-block">Success</button>
+      </div>
+
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="text-muted">
+          <a href="example01.html"><button type="button" class="btn btn-primary btn-lg pull-left">prev</button></a>
+          <a href="example03.html"><button type="button" class="btn btn-primary btn-lg pull-right">next</button></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
